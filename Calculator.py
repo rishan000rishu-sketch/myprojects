@@ -10,7 +10,13 @@ def mul(num1,num2):
     return num1*num2
 
 def div(num1,num2):
-    return num1/num2
+
+    try:
+        return num1/num2
+    
+    except ZeroDivisionError:
+            print('\nError: Cannot divide with zero!!\n')
+            
 
 def sqrt(num):
     return math.sqrt(num)
